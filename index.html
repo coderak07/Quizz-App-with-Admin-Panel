@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    
+	<link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    
+    <div id="mainDiv">
+        <!-- Admin Panel -->
+        <div id = "adminLogin" >
+            <div>
+                <label class="lbLogin">Username : &nbsp;</label>
+                <input type = "text" id="username">
+                <br>
+                <label class="lbLogin">Password : &nbsp;</label>
+                <input type= "password" id="password">
+                <br>
+                <button class = "btnLogin" onclick="loginButton()">LogIn</button>
+            </div>
+        </div>
+        <div id="mainPanel" style="display: none;">
+            <div id="panelInner">
+                <div id="header">
+                    <h3>Questions</h3>
+                </div>
+                <div id="questionsBody">
+                    <ul id="questionsUl">
+
+                    </ul>
+                    <button class="btn btn-danger homeBtn" onclick="homePage()">Done</button>
+                </div>
+                <div id="addBtnDiv">
+                    <button id="addBtn" class="btn btn-success fa fa-plus" onclick="addQuestion()"></button>
+                    <button id="delAllBtn" class="btn btn-danger fa fa-trash" onclick="dellAll()"></button>
+                </div>
+            </div>
+        </div>
+
+        <!--Home Page-->
+        <button class="btn btn-success startBtn" id="startBtn" onclick="startQuiz()">Start Your Quiz</button>
+        <button class="btn btn-success adminBtn" id="adminBtn" onclick="adminPanel()">Admin Panel</button>
+        
+        <!--Quiz Body-->
+        <div id="mainBody" style="display: none;">
+        <button class="btn btn-danger exitBtn" id="exitBtn" onclick="appendResult()">Finish Quiz</button>
+        <div id="quiz">
+            <div id="quizHeader"></div>
+            <div id="quizBody"></div>
+        </div>
+    </div>
+</body>
+</html>

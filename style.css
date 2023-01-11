@@ -1,0 +1,246 @@
+body
+{
+    background-image:url("./Images/bg.webp") ;
+    background-repeat: no-repeat;
+    background-size: 1537px 750px;
+}
+.startBtn, .adminBtn, .homeBtn
+{
+    background-color: #d86f06 !important;
+    font-size: xx-large !important; 
+    border-radius: 80px !important;
+    padding: 50px !important;
+    border: 5px !important;
+    margin: 20px !important;
+}
+#mainDiv
+{
+    width: 100pv;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21rem;
+}
+#mainBody
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;   
+}
+#quiz, #panelInner
+{
+    width: 800px;
+    height: 400px;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 60px auto;
+    border-radius: 30px;
+    background-color: gray;
+}
+#panelInner
+{
+    height: 550px;
+    width: 1200px;
+    grid-template-rows: 60px auto 62px;
+}
+#quizHeader, #header, #addBtnDiv
+{
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+#quizHeader
+{
+    width: 800px;
+}
+#header
+{
+    justify-content: center;
+}
+#quizBody
+{
+    background-color: rgb(133, 49, 216);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px 20px;
+}
+#timer
+{
+    color: white;
+    padding: 18px;
+    background-color: rgb(179, 0, 0);
+    margin-right: -20px;
+    border-top-right-radius: 27px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.option_group{
+    margin-left: 0;
+    padding-left: 0;
+}
+li
+{
+    list-style-type: none;
+}
+.option, .optionPanel
+{
+    border: 3px solid transparent;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+    min-height: 42px;
+    transition: 500ms;
+}
+.option:hover
+{
+    cursor: pointer;
+    border: 3px solid rgb(0, 128, 45);
+}
+.nxtBtn, .rstBtn
+{
+    background-color: rgb(0, 128, 45) !important;
+    border-radius: 50px !important;
+    padding: 15px !important;
+    border: none !important;
+    float: right;
+}
+.active
+{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+    color: white;
+    background-color: rgb(0, 128, 45);
+    border: 3px solid rgb(0, 128, 45);
+    transition: 500ms;
+}
+.exitBtn
+{
+    color: black !important;
+    background-color: #ec88da !important;
+    border-radius: 50px !important;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+    font-size: xx-large !important;
+}
+.nxtBtn:focus, .exitBtn:focus, .rstBtn:focus, .startBtn:focus, .adminBtn:focus, .homeBtn:focus
+{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.nxtBtn:hover, .exitBtn:hover, .rstBtn:hover, .startBtn:hover, .adminBtn:hover, .homeBtn:hover
+{
+    background-color: white !important;
+    color: black !important;
+    transition: 500ms;
+}
+/* =================Admin Panel================ */
+.lbLogin {
+    color: black;
+    font-size: 2rem;
+    
+}
+.btnLogin{
+    width: 100px;
+    height: 50px;
+    background-color: #008002;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+#username, #password{
+    width: 250px;
+    height: 50px;
+    background-color: #fafafa;
+    color: #000000;
+    font-size: large;
+    font-weight: bold;
+}
+.btnLogin:hover{
+    cursor: pointer;
+    border: 3px solid rgb(0, 128, 45);
+}
+#adminLogin {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#mainPanel
+{
+    width: 1000px;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    padding: 400px 0px;
+}
+#questionsBody
+{
+    background-color: rgb(211, 209, 209);
+    padding: 10px 20px;
+    overflow-y: auto; 
+}
+#delAllBtn, #addBtn
+{
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 15px 18px;
+    margin: 1px 30px;
+}
+#addBtnDiv
+{
+    height: 65px;
+    justify-content: center;
+    box-shadow: 0 -2px 5px 1px rgba(0, 0, 0, 0.3);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.homeBtn
+{
+    left: 70%;
+    position: fixed;
+    top: 40vh;
+    padding: 30px 50px !important;
+}
+.panelLi
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 42px;
+    align-items: center;
+    margin: 10px;
+}
+.liBtnAdd, .liBtnCancel, .liBtn
+{
+    font-size: 25px !important;
+    border-radius: 50% !important;
+    padding: 10px 12px !important;
+    margin: 0 20px;
+    max-height: 50px;
+}
+.liBtnAdd
+{
+    padding: 10px !important;
+}
+.liBtnCancel
+{
+    padding: 10px 13px !important;
+}
