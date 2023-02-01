@@ -2,7 +2,8 @@
 HTML, CSS, JavaScript and Replit
 # Tools used #
 * HTML, CSS, Replit and JavaScript
-=======
+===================================
+
 Video of Project
 
 
