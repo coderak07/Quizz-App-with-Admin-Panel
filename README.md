@@ -4,7 +4,7 @@ This is an task given in **"Internship"** by **CodeClause**, built using **HTML5
 <br>
 <br>
 
-## 📌 **Live Demo URL:** <a href="(https://app.flonnect.com/view/video/kateakshay165/Flonnect_2023-02-01_ebce0808-9fb5-4103-98ff-5cb5460203ba">**Visit Now** 🚀</a>
+## 📌 **Live Demo URL:** <a href="https://app.flonnect.com/view/video/kateakshay165/Flonnect_2023-02-01_ebce0808-9fb5-4103-98ff-5cb5460203ba/">**Visit Now** 🚀</a>
 
 <br>
 
