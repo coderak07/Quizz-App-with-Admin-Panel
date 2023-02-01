@@ -1,4 +1,4 @@
-# Quizz-App
+# Quizz-App-with-Admin-Panel
 HTML, CSS, JavaScript and Replit
 # Tools used #
 * HTML, CSS, Replit and JavaScript
